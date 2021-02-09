@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>A WEXTOR experiment</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../modern.css">
+    <script src="../js/wextor.js" type="text/javascript" language="Javascript"></script>
+        <script language="JavaScript" type="text/javascript">
+
+      var id = get_variable_value("id");
+      var fuenf;
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['username'];
+
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block') e.style.display = 'none';
+        else e.style.display = 'block';
+      }
+
+      function pr() {
+        document.getElementById("result").innerHTML = "1 of 2 people found";
+        document.getElementById("logon_button").style.display = "none";
+        toggle_visibility('load_icon');
+        setTimeout("document.getElementById('result').innerHTML = '2 of 2 people found'",17000)
+        setTimeout("toggle_visibility('submit_button')", 17500)
+        setTimeout("toggle_visibility('load_icon')", 17000)
+      }
+
+      function fill_id() {
+                fuenf = document.URL.substring(document.URL.indexOf("id=")+3,document.URL.indexOf("id=")+9);
+      }
+
+      function next_page() {
+                                self.location = "390853d1.html"+"?id="+id+get_forms() + validation_kicked_in_text;
+            }
+                            </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2020, Ulf-Dietrich Reips, Thomas Blumer, Christoph Neuhaus & Jan Simson
+      Available at http://wextor.eu/
+    -->
+  </head>
+
+  <body onload="fill_id()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_24" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Final game</b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+						<td>
+							<table width="500" cellspacing="0" cellpadding="2" border="0">
+								<tbody>
+									<tr>
+                    <td colspan="3"> <p>You will participate in the next and final game with one other player. Please enter a username and click the 'Log-on!'-Button as soon as you are ready. Finding a group usually goes quickly because the players from the first group play as well.</p>
+                      <p>Both you and the other person will be making choices by choosing one of three options on the next pages. Your own choices will produce points for both yourself and the other person. Likewise, the other's choice will produce points for him/her and for you. Both the points that you give to yourself and the points you receive from the other can increase your chances of winning a prize. The more points you receive, the better for you, and the more points the other receives, the better for him/her.</p><p>Have in mind that there are no right or wrong answers.</p>
+											<br></br>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+            <tr>
+              <td>
+                <input id="logon_button" value="Log on!" onclick="pr()" class="button" type="button">
+  							<div class="container_load"> <b>Collecting participants</b>
+  								<div id="load_icon" style="display:none" class="loader"></div>
+  							</div>
+
+  							<br> <span id="result"></span>
+                <br>
+  							<br>
+  							<table>
+  								<!-- start_timer(60000);alert1(); -->
+  							</table>
+                <table border="0" cellpadding="2" cellspacing="0" width="500">
+                  <tr>
+                    <td colspan="3">A button will appear when the group is full. Please click it when you are ready. When everybody is ready, the experiment will start.
+                      <br>
+                      <br>
+                      <input id="submit_button" style="display:none" type="button" value="next" onclick="next_page()" class="button">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+      </center>
+    </form>
+      </body>
+</html>

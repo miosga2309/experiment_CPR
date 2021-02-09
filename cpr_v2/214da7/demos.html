@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Provide your information</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../modern.css">
+    <script src="../js/wextor.js" type="text/javascript" language="Javascript">
+    </script>
+    <script language="JavaScript" type="text/javascript">
+
+      var id = get_variable_value("id");
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['sex', 'age', 'stud'];
+
+      function start_timer(delay) {
+        setTimeout("next_page()", delay);
+        document.getElementById("submit_button").style.display = "none";
+      }
+
+      function get_time() {
+      }
+
+      function next_page() {
+        self.location = "bb2c8e93.html" + "?id=" + id + get_forms() + validation_kicked_in_text;
+      }
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2020, Ulf-Dietrich Reips, Thomas Blumer &amp; Christoph Neuhaus
+      Available at http://wextor.eu/
+    -->
+  </head>
+  <body onload="get_time()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_2" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Please provide your information</b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">Your sex:</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="0" name="sex"> male</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="1" name="sex"> female</td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">Your age:</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="age" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">below 10</option>
+                      <option value="10">10-14</option>
+                      <option value="15">15-19</option>
+                      <option value="20">20-24</option>
+                      <option value="25">25-29</option>
+                      <option value="30">30-34</option>
+                      <option value="35">35-39</option>
+                      <option value="40">40-44</option>
+                      <option value="45">45-49</option>
+                      <option value="50">50-54</option>
+                      <option value="55">55-59</option>
+                      <option value="60">60-64</option>
+                      <option value="65">65-69</option>
+                      <option value="70">over 69</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">Your highest education:</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="0" name="edu"> Postgraduate</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="1" name="edu"> University</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="2" name="edu"> High school</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="3" name="edu"> Apprenticeship</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="4" name="edu"> Elementary school</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td> If you (have) studied, what was your major (e.g., business, physics, psychology etc.)? <br>
+                    <p><input name="stud" id="stud" type="text"></p>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                    <input id="submit_button" type="button" value="next" onclick="start_timer(0)" class="button">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

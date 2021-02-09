@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+
+<head>
+	<title>A WEXTOR experiment</title>
+	<meta name="AUTHOR" content="WEXTOR">
+	<meta name="ROBOTS" content="NONE">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="../modern.css">
+	<script src="../js/wextor.js" type="text/javascript" language="Javascript"></script>
+	<script src="../js/d3.min.js" type="text/javascript"></script>
+	<script src="../js/triangle.js" type="text/javascript"></script>
+	<style type="text/css">
+	.triangle {
+		text-align: center;
+	}
+
+	.triangle circle {
+		cursor: pointer;
+	}
+	</style>
+	<script language="JavaScript" type="text/javascript">
+	var id = get_variable_value("id");
+	var fuenf;
+	var passed_validation = false;
+	var validation_kicked_in_text = '';
+	var items = ['rad_19', 'rad_20', 'rad_21', 'rad_22', 'rad_23', 'rad_24', 'rad_25', 'rad_26', 'rad_27'];
+
+	function fill_id() {
+		fuenf = document.URL.substring(document.URL.indexOf("id=") + 3, document.URL.indexOf("id=") + 9);
+	}
+
+	function next_page() {
+		self.location = "db827c76.html" + "?id=" + id + get_forms() + validation_kicked_in_text;
+	}
+	</script>
+	<!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2020, Ulf-Dietrich Reips, Thomas Blumer, Christoph Neuhaus & Jan Simson
+      Available at http://wextor.eu/
+    -->
+</head>
+
+<body onload="fill_id()">
+	<form name="pumpernickel" method="get">
+		<input type="hidden" name="vi_23" value="1">
+		<center>
+			<table border="0" cellpadding="4" cellspacing="8" width="500">
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3" class="titel"><b>Please answer the questions</b></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<tr>
+							<td colspan="3">Please indicate your level of agreement or disagreement with each of the following statements with regard to the other players in the previous game.</td>
+						</tr>
+					</td>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">How did you feel deciding how much energy you will use?</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Very bad<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_19">
+											<input type="radio" value="1" name="rad_19">
+											<input type="radio" value="2" name="rad_19">
+											<input type="radio" value="3" name="rad_19">
+											<input type="radio" value="4" name="rad_19">
+											<input type="radio" value="5" name="rad_19">
+											<input type="radio" value="6" name="rad_19"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Very good </td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">To what extent did you feel to be part of the group?</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Not at all<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_20">
+											<input type="radio" value="1" name="rad_20">
+											<input type="radio" value="2" name="rad_20">
+											<input type="radio" value="3" name="rad_20">
+											<input type="radio" value="4" name="rad_20">
+											<input type="radio" value="5" name="rad_20">
+											<input type="radio" value="6" name="rad_20"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Very much </td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">How responsible did you feel towards the group while deciding how much energy you will use?</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Not at all responsible<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_21">
+											<input type="radio" value="1" name="rad_21">
+											<input type="radio" value="2" name="rad_21">
+											<input type="radio" value="3" name="rad_21">
+											<input type="radio" value="4" name="rad_21">
+											<input type="radio" value="5" name="rad_21">
+											<input type="radio" value="6" name="rad_21"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Very responsible </td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">To what extent have the other participants used the energy in a responsible way towards the group?</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Not at all responsibly<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_22">
+											<input type="radio" value="1" name="rad_22">
+											<input type="radio" value="2" name="rad_22">
+											<input type="radio" value="3" name="rad_22">
+											<input type="radio" value="4" name="rad_22">
+											<input type="radio" value="5" name="rad_22">
+											<input type="radio" value="6" name="rad_22"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Very responsibly </td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">I am confident that others do not know who I am.</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Strongly disagree<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_23">
+											<input type="radio" value="1" name="rad_23">
+											<input type="radio" value="2" name="rad_23">
+											<input type="radio" value="3" name="rad_23">
+											<input type="radio" value="4" name="rad_23">
+											<input type="radio" value="5" name="rad_23">
+											<input type="radio" value="6" name="rad_23"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Strongly agree</td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">I believe that my personal identity remains unknown to others.</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Strongly disagree<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_24">
+											<input type="radio" value="1" name="rad_24">
+											<input type="radio" value="2" name="rad_24">
+											<input type="radio" value="3" name="rad_24">
+											<input type="radio" value="4" name="rad_24">
+											<input type="radio" value="5" name="rad_24">
+											<input type="radio" value="6" name="rad_24"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Strongly agree</td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">I am easily identified as an individual by others.</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Strongly disagree<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_25">
+											<input type="radio" value="1" name="rad_25">
+											<input type="radio" value="2" name="rad_25">
+											<input type="radio" value="3" name="rad_25">
+											<input type="radio" value="4" name="rad_25">
+											<input type="radio" value="5" name="rad_25">
+											<input type="radio" value="6" name="rad_25"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Strongly agree</td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">Others are likely to know who I am.</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Strongly disagree<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_26">
+											<input type="radio" value="1" name="rad_26">
+											<input type="radio" value="2" name="rad_26">
+											<input type="radio" value="3" name="rad_26">
+											<input type="radio" value="4" name="rad_26">
+											<input type="radio" value="5" name="rad_26">
+											<input type="radio" value="6" name="rad_26"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Strongly agree</td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">My personal identity is known to others.</td>
+									</tr>
+									<tr>
+										<td colspan="3"> Strongly disagree<img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">
+											<input type="radio" value="0" name="rad_27">
+											<input type="radio" value="1" name="rad_27">
+											<input type="radio" value="2" name="rad_27">
+											<input type="radio" value="3" name="rad_27">
+											<input type="radio" value="4" name="rad_27">
+											<input type="radio" value="5" name="rad_27">
+											<input type="radio" value="6" name="rad_27"><img src="../media/transparent.gif" border="0" width="1" height="1" hspace="10" vspace="2">Strongly agree</td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<tr>
+										<td colspan="3">Please indicate to what extent you have based your decisions on maximum profit, pool efficiency, and/or fairness by moving the red dot.</td>
+									</tr>
+									<tr>
+										<td class="triangle" colspan="3">
+											<svg id="tri_01" width="400" height="400"></svg>
+											<input type="hidden" name="tri_01_Profit">
+											<input type="hidden" name="tri_01_Fairness">
+											<input type="hidden" name="tri_01_Efficiency">
+											<script type="text/javascript">
+											createTriangle("tri_01", ["Profit", "Fairness", "Efficiency"])
+											</script>
+										</td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="500">
+							<tr>
+								<td colspan="3">
+									<input id="submit_button" type="button" value="next" onclick="next_page()" class="button"> </td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</form>
+</body>
+
+</html>

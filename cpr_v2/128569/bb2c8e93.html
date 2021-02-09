@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>A WEXTOR experiment</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../modern.css">
+    <script src="../js/wextor.js" type="text/javascript" language="Javascript"></script>
+        <script language="JavaScript" type="text/javascript">
+
+      var id = get_variable_value("id");
+      var fuenf;
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['username'];
+
+
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block') e.style.display = 'none';
+        else e.style.display = 'block';
+      }
+
+      function pr() {
+        document.getElementById("result").innerHTML = "3 of 6 people found";
+        document.getElementById("logon_button").style.display = "none";
+        toggle_visibility('load_icon');
+        setTimeout("document.getElementById('result').innerHTML = '4 of 6 people found'",8000)
+        setTimeout("document.getElementById('result').innerHTML = '5 of 6 people found'",20000)
+        setTimeout("document.getElementById('result').innerHTML = '4 of 6 people found'",28000)
+        setTimeout("document.getElementById('result').innerHTML = '5 of 6 people found'",32000)
+        setTimeout("document.getElementById('result').innerHTML = '6 of 6 people found'",38000)
+        setTimeout("toggle_visibility('submit_button')", 38500)
+        setTimeout("toggle_visibility('load_icon')", 38000)
+      }
+
+      function fill_id() {
+        fuenf = document.URL.substring(document.URL.indexOf("id=")+3,document.URL.indexOf("id=")+9);
+      }
+
+      function next_page() {
+        self.location = "270b9bef.html"+"?id="+id+get_forms() + validation_kicked_in_text;
+        document.getElementById("submit_button").style.display = "none";
+      }
+        </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2020, Ulf-Dietrich Reips, Thomas Blumer, Christoph Neuhaus & Jan Simson
+      Available at http://wextor.eu/
+    -->
+  </head>
+
+  <body onload="fill_id()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_3" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Solar energy consumption game</b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+						<td>
+							<table width="500" cellspacing="0" cellpadding="2" border="0">
+								<tbody>
+									<tr>
+										<td colspan="3"> You will participate in the experiment as a group. Click the 'Log-on!'-Button as soon as you are ready. Finding a group usually only takes a few minutes.
+											<br></br>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+          <tr>
+						<td>
+							<input id="logon_button" value="Log on!" onclick="pr()" class="button" type="button">
+							<div class="container_load"> <b>Collecting participants</b>
+								<div id="load_icon" style="display:none" class="loader"></div>
+							</div>
+
+							<br> <span id="result"></span>
+              <br>
+							<br>
+							<table>
+								<!-- start_timer(60000);alert1(); -->
+							</table>
+							<table width="500" cellspacing="0" cellpadding="2" border="0">
+								<tbody>
+									<tr>
+										<td colspan="3"> A button will appear when the group is full. Please click it when you are ready. When everybody is ready, the experiment will start.
+											<br>
+											<br>
+											<input id="submit_button" style="display:none" value="I'm ready!" onclick="next_page()" class="button" type="button"> </td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

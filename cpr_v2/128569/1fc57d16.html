@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>A WEXTOR experiment</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../modern.css">
+    <script src="../js/wextor.js" type="text/javascript" language="Javascript"></script>
+        <script language="JavaScript" type="text/javascript">
+
+      var id = get_variable_value("id");
+      var fuenf;
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['pop_01', 'email'];
+      function fill_id() {
+                fuenf = document.URL.substring(document.URL.indexOf("id=")+3,document.URL.indexOf("id=")+9);
+      }
+
+      function next_page() {
+                                self.location = "thank.html"+"?id="+id+get_forms() + validation_kicked_in_text;
+            }
+                            </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2020, Ulf-Dietrich Reips, Thomas Blumer, Christoph Neuhaus & Jan Simson
+      Available at http://wextor.eu/
+    -->
+  </head>
+
+  <body onload="fill_id()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_34" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+
+            <tr> <td> <table border="0" cellpadding="2" cellspacing="0" width="500"><tr> <td colspan="3"><tr> <td colspan="3">Would you have preferred to do the task alone?</td> </tr><tr> <td colspan="3"> <select name="pop_01" size="1"><option>Please choose here...</option> <option value="0">No</option> <option value="1">Yes</option> <option value="2">I do not care</option>
+              <option value="3">I did do the task alone</option></select>
+            </td>
+          </tr>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>
+    <table>
+      <p>Please enter your email address so that we can contact you in case you win. Your contact information will be deleted right after the winners are drawn and contacted (approximately by the end of February 2021). </p><p>In case you are not interested, please leave the field empty. </p><br>
+      <tr>
+        <td> Email address:
+          <input name="email" id="email" type="text">
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+                  <td>
+                    <table border="0" cellpadding="2" cellspacing="0" width="500">
+                      <tr>
+                        <td colspan="3">
+                          <input id="submit_button" type="button" value="next" onclick="next_page()" class="button">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                      </table>
+      </center>
+    </form>
+      </body>
+</html>

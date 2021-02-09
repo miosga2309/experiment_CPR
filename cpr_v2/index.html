@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Welcome to this Web experiment</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="refresh" content="2;URL=source.html">
+    <link rel="stylesheet" href="modern.css">
+    <script src="js/wextor.js" type="text/javascript" language="Javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+
+      var id;
+      var query;
+
+      function get_query() {
+        query = document.location.search.substring(1)
+        if (query == "") {
+            return "";
+        } else {
+            return "&" + query;
+        }
+      }
+
+      function assign_id() {
+        var id_num = 9;
+        var eins = Math.pow(10,id_num);
+        var zwei = Math.random();
+        id = Math.round(zwei*eins);
+        return id;
+      }
+
+      function start_timer(delay) {
+        setTimeout("next_page()", delay);
+      }
+
+      function next_page() {
+        window.location = "start.html" + "?id=" + assign_id() + get_query();
+      }
+
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2020, Ulf-Dietrich Reips, Thomas Blumer &amp; Christoph Neuhaus
+      Available at http://wextor.eu/
+    -->
+  </head>
+  <body onload="start_timer(0)">
+  </body>
+</html>

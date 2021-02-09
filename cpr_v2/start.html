@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Welcome to this Web experiment</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="modern.css">
+    <script src="js/wextor.js" type="text/javascript" language="Javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+
+      var id = get_variable_value("id");
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+
+      function start_timer(delay) {
+        setTimeout("next_page()", delay);
+        document.getElementById("submit_button").style.display = "none";
+      }
+
+      function get_time() {
+      }
+
+      function next_page() {
+        self.location = get_url() + "?id=" + id + get_forms() + validation_kicked_in_text;
+      }
+
+      rnd.today=new Date();
+      rnd.seed=rnd.today.getTime();
+
+      function rnd() {
+        rnd.seed = (rnd.seed*9301+49297) % 233280;
+        return rnd.seed/(233280.0);
+      }
+
+      function get_url() {
+        URL_list = new Array ('112acf/demos.html','128569/demos.html','214da7/demos.html','22ec89/demos.html');
+        return URL_list[Math.ceil(rnd()*(URL_list.length))-1];
+      }
+
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2020, Ulf-Dietrich Reips, Thomas Blumer &amp; Christoph Neuhaus
+      Available at http://wextor.eu/
+    -->
+  </head>
+  <body onload="get_time()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_1" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Welcome!</b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3"> Thank you for participating in our experiment. We appreciate your time. The experiment will take about 15 minutes and consists of two games. For each game, you will join a group and participate with other people in the experiment. <br />
+                    <br /> You can win cash prizes after you have completed the experiment as compensation for your time. Certain behavior during the games can increase your chances of winning. That behavior will be explained before each game. The prizes are:
+                    <ul>
+                      <li>1 x 150 EUR</li>
+                      <li>2 x 50 EUR</li>
+                    </ul>
+                    All information provided by you will be treated confidentially, will be anonymised and used for scientific purposes only. You can stop participating whenever you like. Your participation is highly appreciated. <br />
+                    <br /> The study is part of the master thesis of Jonas Miosga (jonas.miosga@uni-konstanz.de) and is supervised by Prof. Ulf-Dietrich Reips. In case of any questions, please contact Jonas Miosga. <br />
+                    <br /> Please click on the following button to start with the experiment. <br />
+                    <br /><br />
+                    <input id="submit_button" type="button" value="Let's go!" onclick="start_timer(2300)" class="button">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+    <img src="http://wextor.eu/wextor_img/empty.gif" width="1" height="1"></body>
+</html>

@@ -1,0 +1,215 @@
+body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+
+  color: #000;
+}
+
+a:link {
+  color: #0000FF;
+}
+a:visited {
+  color: #0000FF;
+}
+
+table {
+  border: none;
+  border-width: 1px;
+  background-color: #FFFFFF;
+}
+
+center > table {
+  margin-top: 25px;
+
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+td {
+  padding: 3px;
+
+  text-align: left;
+
+  font-weight: normal;
+  font-style: normal;
+
+  background-color: #ffffff;
+}
+
+.titel {
+  text-align: center;
+
+  font-size: 26px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: normal;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.titel > b {
+  font-weight: 300;
+}
+
+
+.button {
+  float: right;
+
+  padding: 7px 10px;
+
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: normal;
+
+  color: #000;
+  border: 1px solid #000;
+  background-color: white;
+}
+
+.button:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.button:focus {
+  outline: green auto 5px;
+}
+
+/* customised */
+.myBox {
+  border: 2px outset red;
+  background-color: white;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+.container_load {
+  display: flex;
+  width: 93%;
+  background: white;
+  padding-top: 20px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+
+    min-height: 30em;
+       display: table-cell;
+       vertical-align: middle
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+label {
+  width:80px;
+  display: inline-block;
+}
+
+
+.loader {
+  border: 2px solid #f3f3f3; /* Light grey */
+  border-top: 2px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#fp1{
+  width: 20%;
+  height: 50px;
+  background-color: #333;
+  float: left;
+}
+
+
+
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.img1{background-image:url("media/1.jpg");}
+.img2{background-image:url("media/2.jpg");}
+.img3{background-image:url("media/3.jpg");}
+.img4{background-image:url("media/4.jpg");}
+.img5{background-image:url("media/5.jpg");}
+.img6{background-image:url("media/6.jpg");}
+.img7{background-image:url("media/7.jpg");}
+.img8{background-image:url("media/8.jpg");}
+.img9{background-image:url("media/9.jpg");}
+.img10{background-image:url("media/10.jpg");}
+.img11{background-image:url("media/11.jpg");}
+.img12{background-image:url("media/12.jpg");}
+.img13{background-image:url("media/13.jpg");}
+.img14{background-image:url("media/14.jpg");}
+.img15{background-image:url("media/15.jpg");}
+.img16{background-image:url("media/16.jpg");}
+.img17{background-image:url("media/17.jpg");}
+.img18{background-image:url("media/18.jpg");}
+.img19{background-image:url("media/19.jpg");}
+.img20{background-image:url("media/20.jpg");}
+
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
